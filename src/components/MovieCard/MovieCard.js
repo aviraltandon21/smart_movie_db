@@ -5,8 +5,14 @@ import classNames from 'classnames';
 
 const MovieCard = ({movie:{original_title,overview,release_date,poster_path},i,activeMovie}) => {
     const classes = useStyles();
+    useEffect(() => {
+     if(activeMovie===i) {
+         let elmnt = document.getElementById(`card${i}`);
+         window.scroll(0,elmnt.offsetTop-50);
+     }
+   }, [i,activeMovie])
     return(
-        <Card className={classNames (classes.card,activeMovie===i? classes.activeCard: null)}>
+        <Card id={`card${i}`} className={classNames (classes.card,activeMovie===i? classes.activeCard: null)}>
             <CardActionArea>
             <CardMedia className={classes.media} image={`https://image.tmdb.org/t/p/w500${poster_path}`}/>
                 <div className={classes.details}>
