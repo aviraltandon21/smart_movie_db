@@ -19,7 +19,7 @@ const MovieCard = ({movie:{original_title,overview,release_date,poster_path},i,a
                 </CardContent>
             </CardActionArea>
             <CardActions className={classes.cardActions}>
-                <Button size="small" color="primary">Learn More</Button>
+               
                 <Typography variant="h5" color="textSecondary">{i+1}</Typography>
             </CardActions>
         </Card>
