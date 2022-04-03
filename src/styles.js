@@ -63,7 +63,8 @@ export default makeStyles((theme) => ({
     },
   },
   movieLogo: {
-    height: '27vmin',
+    height: '20px',
+    width: '20px',
     padding: '0 5%',
    
     [theme.breakpoints.down('sm')]: {

@@ -13,12 +13,12 @@ const Movielottie = () => {
         autoplay: true,
         animationData: require('./movie.json'),
       });
-      animate.setSpeed(0.5);
+      animate.setSpeed(0.3);
     }, []);
   
     return (
     
-          <div ref={container}></div>
+          <div ref={container} style={{width: '280px',height: '280px'}}></div>
         
     );
   };

@@ -42,7 +42,7 @@ const App = () => {
       <Load/>
       : <div>
       <div className={classes.logoContainer}>
-      <Movielottie className={classes.movieLogo}/>
+      <Movielottie/>
       </div>
         <MovieCards movies={latestMovies} activeMovie={activeMovie}/>
           <footer className="Footer">
